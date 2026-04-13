@@ -5,7 +5,43 @@
   <title>Cuisine</title>
 
 <style>
+.grid-item1 { grid-area: header; }
 
+.grid-item2 { grid-area: menu; }
+
+.grid-item3 { grid-area: main; }
+
+.grid-item4 { grid-area: footer; }
+
+.grid-container {
+
+display: grid;
+
+grid-template-columns: auto auto auto auto auto;
+
+grid-template-areas:
+
+'header header header header header'
+
+'menu main main main main'
+
+'menu footer footer footer footer';
+background-color: pink;
+
+padding: 30px;
+margin: 20;
+}
+.grid-container div {
+
+background-color: plum;
+justify-content: center;
+text-align: center;
+align-items: center;
+padding: 120px;
+
+border: 4px solid gold;
+
+}
 p
 
 {
@@ -36,13 +72,9 @@ body
 
 {
 
-background-color: rosybrown;
+background-color: pink;
 
-width: 500px;
-
-border: 15px dotted rgb(254, 207, 255);
-
-padding: 50px;
+width: 100px;
 
 margin: 20px;
 
@@ -77,13 +109,21 @@ padding:5px;
 </style>
 
 
-<!--Heading-->
+<body>
+  
+<div class="grid-container">
 
-<header>By Aria Jain 28/02/26</header>
+<div class="grid-item1">
+  <header>By Aria Jain 28/02/26</header>
+ <h1><b><i><u>Cuisines in my Culture</u></i></b></h1>
+  </div>
 
-<h1><b><i><u>Cuisines in my Culture</u></i></b></h1>
+<div class="grid-item2">
+  <img src="colorful-thali-indian-food-.jpg" height="400" width="500"><br>
+  </div>
 
-<section><h1>Cuisines that we have in India</h1>
+<div class="grid-item3">
+<h1>Cuisines that we have in India</h1>
 
 <p>In my country, cuisines that we have are:
 
@@ -102,11 +142,14 @@ padding:5px;
 <li>Central Indian Cuisine</li>
 
 <li>Street and Regional Specialties</li></ul>
+</div>
 
-<img src="colorful-thali-indian-food-.jpg" height="200" width="300"><br>
+<div class="grid-item4">
+  <h1> Here are the cuisines we have in India. 
+  Thank You!</h1>
+  <img src="South-Indian-Cuisine.jpg" height="200" width="300"><br>
+</div>
 
-</section>
-
-<footer>cuisines</footer>
-
+</div>
+</body>
 </html>
