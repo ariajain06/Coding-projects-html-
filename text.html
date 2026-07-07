@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Make changes to the text</title>
+
+<style>
+
+h2 {
+
+text-align: center;
+
+}
+p {
+    text-align: center;
+}
+
+
+.buttons {
+
+padding: 20px;
+
+width: 200px;
+
+margin: auto;
+
+text-align: center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Make changes to the text</h2>
+<p>Hello</p>
+
+<div class="text"></div>
+
+<div class="buttons">
+
+<button onclick="hideRect()">Hide</button>
+
+<button onclick="showRect()">Show</button>
+
+</div>
+
+<script>
+
+let div = document.querySelector(".text");
+
+
+function hideRect() {
+
+div.text.style.display = "none";
+
+}
+
+function showRect() {
+
+div.text.style.display = "text";
+
+}
+
+div.onmouseenter = function () {
+
+div.style.background = "gold";
+
+};
+
+div.onmouseleave = function () {
+
+div.style.background = "pink";
+
+};
+
+</script>
+
+</body>
+
+</html>
